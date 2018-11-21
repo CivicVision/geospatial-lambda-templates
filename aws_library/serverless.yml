@@ -1,0 +1,8 @@
+service: foss4g_oceania
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+functions:
+  hello:
+    handler: handler.hello
