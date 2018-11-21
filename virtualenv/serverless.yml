@@ -1,0 +1,14 @@
+service: foss4g_oceania
+
+provider:
+  name: aws
+  runtime: python3.6
+package:
+  include:
+    - venv/lib/python3.6/site-packages
+    - analysis.py
+  exclude:
+    - venv
+functions:
+  hello:
+    handler: analysis.hello
